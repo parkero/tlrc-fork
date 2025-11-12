@@ -3,6 +3,8 @@ name: Build and release
 on:
   push:
     tags: v*.*.*
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 env:
   CARGO_TERM_COLOR: always
